@@ -39,3 +39,56 @@ Important Note
 4. Apply the best practices and design patterns(Page Object for example) when you set up the framework
 5. Implement yaml to integrate and schedule your tests at 8 AM every morning CEST time
 6. Please make sure to implement the best practices of the framework you are using, that is the most important part of this exercise.
+
+## Test Scenarios Covered
+### UI Test Scenarios
+1. Add new Serial Number and verify via UI
+    * Adds a new serial number through the UI and verifies its presence on the page.
+2. Delete a serial number and verify via UI
+    * Deletes a serial number through the UI and verifies its absence on the page.
+3. Add new Serial Number and verify if exists via API call
+    * Adds a new serial number through the UI and verifies its presence using an API call.
+4. Delete a serial number and verify if via get API call
+    * Deletes a serial number through the UI and verifies its absence using an API call.
+
+### API Test Scenarios
+1. Add a serial number and verify it exists in the GET API response
+    * Adds a new serial number via an API call and verifies its presence in the GET API response.
+2. Delete serial number and verify it doesn't exist in GET API response
+    * Deletes a serial number via an API call and verifies its absence in the GET API response.
+3. Verify UI after API actions
+    * Adds a serial number via an API call, verifies its presence in the UI, deletes it via an API call, and verifies its absence in the UI.
+
+### Technologies Used
+* Playwright
+* TypeScript
+* Page Object Model (POM)
+
+### Try to Implement Best Practices 
+1. Page Object Model (POM)
+    * UI interactions are encapsulated in page classes (ChargePointInstallationPage).
+    * API interactions are encapsulated in utility classes (ApiUtils).
+2. Fixtures
+    * Custom fixtures are used to initialize page objects and API utilities, reducing code duplication.
+3. Randomized Test Data
+    * Random serial numbers are generated for each test to ensure independence and avoid conflicts.
+4. Error Handling
+    * Proper error handling is implemented for API calls and UI interactions.
+
+### Directory Structure
+project-root/
+├── fixtures/                   # Custom fixtures for Playwright
+│   └── ChargePointFixture.ts
+├── page/                       # Page objects and API utilities
+│   ├── ApiUtils.ts
+│   └── ChargePointInstallationPage.ts
+├── tests/                      # Test cases
+│   └── chargepointTests.spec.ts
+├── env/                        # Environment configurations
+├── playwright.config.ts        # Playwright configuration
+
+### Running Tests
+Run all Tests:
+```
+npx playwright test
+```
