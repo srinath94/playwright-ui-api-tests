@@ -64,7 +64,7 @@ Important Note
 * TypeScript
 * Page Object Model (POM)
 
-### Try to Implement Best Practices 
+### Best Practices Implemented
 1. Page Object Model (POM)
     * UI interactions are encapsulated in page classes (ChargePointInstallationPage).
     * API interactions are encapsulated in utility classes (ApiUtils).
@@ -74,6 +74,8 @@ Important Note
     * Random serial numbers are generated for each test to ensure independence and avoid conflicts.
 4. Error Handling
     * Proper error handling is implemented for API calls and UI interactions.
+5. CI/CD Process
+    * Tests are scheduled to run at 8 AM CEST every morning using a YAML configuration file.
 
 ### Directory Structure
 ```
