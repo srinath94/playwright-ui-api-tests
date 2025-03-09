@@ -76,6 +76,7 @@ Important Note
     * Proper error handling is implemented for API calls and UI interactions.
 
 ### Directory Structure
+```
 project-root/
 ├── fixtures/                   # Custom fixtures for Playwright
 │   └── ChargePointFixture.ts
@@ -86,6 +87,7 @@ project-root/
 │   └── chargepointTests.spec.ts
 ├── env/                        # Environment configurations
 ├── playwright.config.ts        # Playwright configuration
+```
 
 ### Running Tests
 Run all Tests:
