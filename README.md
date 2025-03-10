@@ -76,6 +76,7 @@ Important Note
     * Proper error handling is implemented for API calls and UI interactions.
 5. CI/CD Process
     * Tests are scheduled to run at 8 AM CEST every morning using a YAML configuration file.
+    * Test variables are managed through gitHub Actions environments variable option.
 
 ### Directory Structure
 ```
@@ -96,3 +97,8 @@ Run all Tests:
 ```
 npx playwright test
 ```
+### Test Results 
+![alt text](image.png)
+
+GitHub Actions scheduled job
+![alt text](image-1.png)  

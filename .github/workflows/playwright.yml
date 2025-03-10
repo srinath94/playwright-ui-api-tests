@@ -12,8 +12,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     env:
-      BASE_URL: http://localhost:3000/
-      API_URL: http://localhost:3001
+      BASE_URL: ${{ vars.BASE_URL }}
+      API_URL: ${{ vars.API_URL }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
