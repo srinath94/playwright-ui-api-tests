@@ -41,7 +41,7 @@ export class ApiUtils {
     }
     return response;
   }
-
+  //get all the charge points details
   async getAllChargePoints() {
     const response = await this.requestContext.get(
       `${this.apiUrl}/charge-point`
