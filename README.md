@@ -1,4 +1,4 @@
-# Charge Point Installation App [Edited]
+# Charge Point Installation
 
 App to support electricians in setting up a new charge point infrastructure.
 
