@@ -2,7 +2,7 @@
 
 App to support electricians in setting up a new charge point infrastructure.
 
-The app allows the electricians to inform us about all the installed charge points, using their serial numbers.
+CASE 2 The app allows the electricians to inform us about all the installed charge points, using their serial numbers.
 
 The following functionalities are available:
 - Visualize list of installed charge points 
