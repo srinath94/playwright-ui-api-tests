@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Charge Point Installation App (CAse 1)
+=======
+# Charge Point Installation app
+>>>>>>> 07cd617 (update readme)
 
 App to support electricians in setting up a new charge point infrastructure.
 
