@@ -1,8 +1,8 @@
-# Charge Point Installation App (CAse 1)
+# Charge Point Installation App
 
 App to support electricians in setting up a new charge point infrastructure.
 
-CASE 4 The app allows the electricians to inform us about all the installed charge points, using their serial numbers.
+The app allows the electricians to inform us about all the installed charge points, using their serial numbers.
 
 The following functionalities are available:
 - Visualize list of installed charge points 
